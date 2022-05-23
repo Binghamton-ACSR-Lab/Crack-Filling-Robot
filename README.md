@@ -20,10 +20,7 @@ Motion planning and cracking filling motion control are the two main tasks prese
 * ### online Sensor-based Complete Coverage (oSCC)
     The onlineSCCpoSCCq algorithm is a practical extension of SCC where the robot stores and incrementally constructs the crack graph online. It scans for new cracks in W and updates the crack graph while simultaneously filling it.
 
-
-<br/>
-
-### Design 
+## Design 
 
 * Jetson Nano
 * Lidar
@@ -33,7 +30,6 @@ Motion planning and cracking filling motion control are the two main tasks prese
 > ![](Docs/1.Images/WallE_CAD_top.png)
 > ![](Docs/1.Images/WallE_CAD_top_open.png)
 
-<br/>
 
 ## Performance Comparison for the Configuration in FIG：
 
