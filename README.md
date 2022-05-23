@@ -18,7 +18,7 @@ Motion planning and cracking filling motion control are the two main tasks prese
 * ### Sensor-based Complete Coverage (SCC)
     We discuss the optimal coverage planning with known cracks in the previous section, and the crack coverage planning algorithm does not consider the sensor coverage. In order to solve the SIFT problem, we first consider the coverage planning with known target (crack) information. Then, we generalize the algorithm to the case with unknown target information.
 * ### online Sensor-based Complete Coverage (oSCC)
-    The onlineSCCpoSCCq algorithm is a practical extension of SCC where the robot stores and incrementally constructs the crack graph online. It scans for new cracks in W and updates the crack graph while simultaneously filling it.
+    The onlineSCC algorithm is a practical extension of SCC where the robot stores and incrementally constructs the crack graph online. It scans for new cracks in W and updates the crack graph while simultaneously filling it.
 
 ## Design 
 
