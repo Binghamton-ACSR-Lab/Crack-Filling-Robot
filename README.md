@@ -20,6 +20,13 @@ Motion planning and cracking filling motion control are the two main tasks prese
 * ### online Sensor-based Complete Coverage (oSCC)
     The onlineSCC algorithm is a practical extension of SCC where the robot stores and incrementally constructs the crack graph online. It scans for new cracks in W and updates the crack graph while simultaneously filling it.
 
+## Flow Chart
+| SCC Flow Cahrt| SCC Simulation Result |
+|:----:|:----:|
+| <img width="100%" src="Docs/2.Drawings/SCC_flow.svg"> | <img width="100%" src="Docs/1.Images/Known.gif"> |
+| oSCC Flow Cahrt| oSCC Simulation Result |
+| <img width="100%" src="Docs/2.Drawings/oSCC_flow.svg"> | <img width="100%" src="Docs/1.Images/UnKnown.gif"> |
+
 ## Design 
 
 * Jetson Nano
@@ -29,6 +36,7 @@ Motion planning and cracking filling motion control are the two main tasks prese
 > ![](Docs/1.Images/WallE_CAD_front.png)
 > ![](Docs/1.Images/WallE_CAD_top.png)
 > ![](Docs/1.Images/WallE_CAD_top_open.png)
+> 
 
 
 ## Performance Comparison for the Configuration in FIG：

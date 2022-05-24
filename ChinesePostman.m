@@ -7,18 +7,23 @@
 %Chinese Postman Problem Function
 %--------------------------------------------------------------------%
 function [Path,Weight,add,st] = ChinesePostman(ADJ,Matrix_Input, DIST, Start, ee, cl)
-% drawArrow(p0,p1)
+% ChinesePostman(ADJ,Matrix_Input, DIST, Start, ee, cl)
 %
-% Draws a simple arrow in 2D, from p0 to p1.
+% Function to compute a Chinese Postman Problem using Linear Programming Matching.  
 %
 % INPUTS:
-%   p0 = [x0; y0] = position of the tail
-%   p1 = [x1; y1] = position of the tip
-%   color = arrow color. Optional: default is black 
-%       --> can be 'r','g','b','c','m','y','w', 'k' or a 1x3 color vector
+%   ADJ = 
+%   Matrix_Input = 
+%   DIST = 
+%   Start = 
+%   ee = 
+%   cl = 
 %
 % OUTPUTS:
-%   hArrow = handle to the patch object representing the arrow
+%   Path = 
+%   Weight = 
+%   add = 
+%   st = 
 %
 % Defaults:
 
