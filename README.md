@@ -21,8 +21,9 @@ Motion planning and cracking filling motion control are the two main tasks prese
     The onlineSCC algorithm is a practical extension of SCC where the robot stores and incrementally constructs the crack graph online. It scans for new cracks in W and updates the crack graph while simultaneously filling it.
 
 ## Flow Chart
-| SCC Flow Cahrt| SCC Simulation Result |
+| | |
 |:----:|:----:|
+| SCC Flow Cahrt| SCC Simulation Result |
 | <img width="100%" src="Docs/2.Drawings/SCC_flow.svg"> | <img width="600" src="Results/GIF/myCrack8_100_1_SCC.gif"> |
 | oSCC Flow Cahrt| oSCC Simulation Result |
 | <img width="100%" src="Docs/2.Drawings/oSCC_flow.svg"> | <img width="600" src="Results/GIF/myCrack8_100_1_oSCC.gif"> |
