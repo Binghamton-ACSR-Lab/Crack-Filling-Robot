@@ -67,3 +67,182 @@ To solve the above SIFC problem, we present a set of algorithmic developments in
 
 
 <br/>
+
+
+<table style="text-align:center">
+  <thead>
+    <tr>
+      <th> </th>
+      <th colspan="4" style="text-align:center">Fililng Time (s)</th>
+      <th colspan="4" style="text-align:center">Robot Travel Time (s)</th>
+      <th colspan="4" style="text-align:center">Robot Path Length (m)</th>
+      <th colspan="4" style="text-align:center">Nozzle Path (m)</th>
+      <th colspan="4" style="text-align:center">Sensor Coverage (%)</th>
+      <th colspan="4" style="text-align:center">Filling Accuracy (%)</th>
+    </tr>
+    <tr>
+      <td > </td>
+      <td >U100</td> 
+      <td >U80</td>
+      <td >G100</td>
+      <td >G20</td>
+      <td >U100</td> 
+      <td >U80</td>
+      <td >G100</td>
+      <td >G20</td>
+      <td >U100</td> 
+      <td >U80</td>
+      <td >G100</td>
+      <td >G20</td>
+      <td >U100</td> 
+      <td >U80</td>
+      <td >G100</td>
+      <td >G20</td>
+      <td >U100</td> 
+      <td >U80</td>
+      <td >G100</td>
+      <td >G20</td>
+      <td >U100</td> 
+      <td >U80</td>
+      <td >G100</td>
+      <td >G20</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">`onlineSCC`</td>
+      <td >731</td> 
+      <td >401</td>
+      <td >356</td>
+      <td >346</td>
+      <td >1398</td> 
+      <td >937</td>
+      <td >952</td>
+      <td >889</td>
+      <td >51 (50)</td> 
+      <td >42 (40)</td>
+      <td >52 (45)</td>
+      <td >46 (44)</td>
+      <td >26</td> 
+      <td >15</td>
+      <td >15</td>
+      <td >14</td>
+      <td >131 (129)</td> 
+      <td >109 (103)</td>
+      <td >133 (117)</td>
+      <td >119 (114)</td>
+      <td >98.9</td> 
+      <td >98.9</td>
+      <td >98.1</td>
+      <td >98.1</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">`SCC`</td>
+      <td >654</td> 
+      <td >430</td>
+      <td >366</td>
+      <td >345</td>
+      <td >1328</td> 
+      <td >975</td>
+      <td >919</td>
+      <td >889</td>
+      <td >51</td> 
+      <td >49</td>
+      <td >49</td>
+      <td >52</td>
+      <td >23</td> 
+      <td >16</td>
+      <td >14</td>
+      <td >12</td>
+      <td >132</td> 
+      <td >126</td>
+      <td >127</td>
+      <td >134</td>
+      <td >99.1</td> 
+      <td >99.8</td>
+      <td >98.4</td>
+      <td >98.4</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">`GCC`</td>
+      <td ></td> 
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td> 
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td> 
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td> 
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td> 
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td> 
+      <td ></td>
+      <td ></td>
+      <td ></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">`Greedy`</td>
+      <td ></td> 
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td> 
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td> 
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td> 
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td> 
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td> 
+      <td ></td>
+      <td ></td>
+      <td ></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">`ZigZag`</td>
+      <td ></td> 
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td> 
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td> 
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td> 
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td> 
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td> 
+      <td ></td>
+      <td ></td>
+      <td ></td>
+    </tr>
+  </tbody>
+</table>
