@@ -16,7 +16,8 @@ We present a simultaneous sensor-based inspection and footprint coverage (RIFC) 
 ## Algorithm Design Overview
 
 To solve the above SIFC problem, we present a set of algorithmic developments in this paper.
-> ![](Docs/2.Drawings/algorithm_overview.drawio.svg)
+
+> <img width="100%" src="Docs/2.Drawings/algorithm_overview.drawio.svg">
 
 * ### Sensor-based Complete Coverage (SCC)
     We discuss the optimal coverage planning with known cracks in the previous section, and the crack coverage planning algorithm does not consider the sensor coverage. In order to solve the SIFT problem, we first consider the coverage planning with known target (crack) information. Then, we generalize the algorithm to the case with unknown target information.
@@ -50,21 +51,6 @@ To solve the above SIFC problem, we present a set of algorithmic developments in
 
 
 ## Experiment Performance Comparison on Four Crack Maps under Five Planning Algorithms：
-
-|             |         Fililng Time (s)         ||||          Robot Travel Time (s)          ||||           Robot Path Length (m)            ||||         Nozzle Path (m)         ||||           Sensor Coverage (%)            ||||          Filling Accuracy (%)          ||||   |
-| :---------- | :--------------: | :-: | :--: | :-: | :-------------------: | :--: | :--: | :--: | :-------------------: | :---: | :---: | :---: | :-------------: | :-: | :--: | :-: | :-----------------: | :---: | :---: | :---: | :------------------: | :--: | :--: | :--: | - |
-|             |       U100       | U80 | G100 | G20 |         U100          | U80  | G100 | G20  |         U100          |  U80  | G100  |  G20  |      U100       | U80 | G100 | G20 |        U100         |  U80  | G100  |  G20  |         U100         | U80  | G100 | G20  |   |
-| `onlineSCC` |       731        | 401 | 356  | 346 |         1398          | 937  | 952  | 889  |          51           |  42   |  52   |  46   |       26        | 15  |  15  | 14  |         131         |  109  |  133  |  119  |         98.9         | 98.9 | 98.1 | 98.1 |   \
-|             |                  |     |      |     |                       |      |      |      |         (50)          | (40)  | (45)  | (44)  |                 |     |      |     |        (129)        | (103) | (117) | (114) |                      |      |      |      |   |
-| `SCC`       |       654        | 430 | 366  | 345 |         1328          | 975  | 919  | 889  |          51           |  49   |  49   |  52   |       23        | 16  |  14  | 12  |         132         |  126  |  127  |  134  |         99.1         | 99.8 | 98.4 | 98.4 |   \
-|             |                  |     |      |     |                       |      |      |      |         (48)          | (43)  | (46)  | (45)  |                 |     |      |     |        (123)        | (111) | (118) | (117) |                      |      |      |      |   |
-| `GCC`       |       559        | 364 | 273  | 276 |          914          | 577  | 455  | 455  |          30           |  19   |  15   |  13   |       30        | 20  |  14  | 12  |         58          |  34   |  24   |  20   |         99.1         | 99.8 | 98.4 | 98.4 |   \
-|             |                  |     |      |     |                       |      |      |      |         (29)          | (17)  | (13)  | (12)  |                 |     |      |     |        (60)         | (34)  | (24)  | (20)  |                      |      |      |      |   |
-| `Greeedy`   |       746        | 446 | 414  | 372 |         1714          | 1228 | 1104 | 1060 |          73           |  63   |  58   |  57   |       29        | 19  |  17  | 16  |         187         |  163  |  150  |  147  |         99.6         | 99.5 | 99.1 | 99.1 |   \
-|             |                  |     |      |     |                       |      |      |      |         (65)          | (53)  | (53)  | (48)  |                 |     |      |     |        (116)        | (137) | (137) | (123) |                      |      |      |      |   |
-| `ZigZag`    |       752        | 480 | 448  | 415 |         2611          | 2284 | 2149 | 2166 |          196          |  195  |  195  |  195  |       29        | 19  |  16  | 18  |         504         |  502  |  501  |  501  |         99.1         | 99.8 | 98.4 | 98.4 |   \
-|             |                  |     |      |     |                       |      |      |      |         (201)         | (201) | (201) | (201) |                 |     |      |     |        (517)        | (517) | (517) | (517) |                      |      |      |      |   |
-
 
 <br/>
 
@@ -146,18 +132,18 @@ To solve the above SIFC problem, we present a set of algorithmic developments in
       <td >975</td>
       <td >919</td>
       <td >889</td>
-      <td >51</td> 
-      <td >49</td>
-      <td >49</td>
-      <td >52</td>
+      <td >51 (48)</td>
+      <td >49 (43)</td>
+      <td >49 (46)</td>
+      <td >52 (45)</td>
       <td >23</td> 
       <td >16</td>
       <td >14</td>
       <td >12</td>
-      <td >132</td> 
-      <td >126</td>
-      <td >127</td>
-      <td >134</td>
+      <td >132 (123)</td> 
+      <td >126 (111)</td>
+      <td >127 (118)</td>
+      <td >134 (117)</td>
       <td >99.1</td> 
       <td >99.8</td>
       <td >98.4</td>
@@ -165,84 +151,84 @@ To solve the above SIFC problem, we present a set of algorithmic developments in
     </tr>
     <tr>
       <td style="text-align:left">`GCC`</td>
-      <td ></td> 
-      <td ></td>
-      <td ></td>
-      <td ></td>
-      <td ></td> 
-      <td ></td>
-      <td ></td>
-      <td ></td>
-      <td ></td> 
-      <td ></td>
-      <td ></td>
-      <td ></td>
-      <td ></td> 
-      <td ></td>
-      <td ></td>
-      <td ></td>
-      <td ></td> 
-      <td ></td>
-      <td ></td>
-      <td ></td>
-      <td ></td> 
-      <td ></td>
-      <td ></td>
-      <td ></td>
+      <td >559</td> 
+      <td >364</td>
+      <td >273</td>
+      <td >276</td>
+      <td >914</td> 
+      <td >577</td>
+      <td >455</td>
+      <td >455</td>
+      <td >30 (29)</td>
+      <td >19 (17)</td>
+      <td >15 (13)</td>
+      <td >13 (12)</td>
+      <td >30</td> 
+      <td >20</td>
+      <td >14</td>
+      <td >12</td>
+      <td >58 (60)</td> 
+      <td >34 (34)</td>
+      <td >24 (24)</td>
+      <td >20 (20)</td>
+      <td >99.1</td> 
+      <td >99.8</td>
+      <td >98.4</td>
+      <td >98.4</td>
     </tr>
     <tr>
       <td style="text-align:left">`Greedy`</td>
-      <td ></td> 
-      <td ></td>
-      <td ></td>
-      <td ></td>
-      <td ></td> 
-      <td ></td>
-      <td ></td>
-      <td ></td>
-      <td ></td> 
-      <td ></td>
-      <td ></td>
-      <td ></td>
-      <td ></td> 
-      <td ></td>
-      <td ></td>
-      <td ></td>
-      <td ></td> 
-      <td ></td>
-      <td ></td>
-      <td ></td>
-      <td ></td> 
-      <td ></td>
-      <td ></td>
-      <td ></td>
+      <td >746</td> 
+      <td >446</td>
+      <td >414</td>
+      <td >372</td>
+      <td >1714</td> 
+      <td >1228</td>
+      <td >1104</td>
+      <td >1060</td>
+      <td >73 (65)</td>
+      <td >63 (53)</td>
+      <td >58 (53)</td>
+      <td >57 (48)</td>
+      <td >29</td> 
+      <td >19</td>
+      <td >17</td>
+      <td >16</td>
+      <td >187 (166)</td> 
+      <td >163 (137)</td>
+      <td >150 (137)</td>
+      <td >147 (123)</td>
+      <td >99.6</td> 
+      <td >99.5</td>
+      <td >99.1</td>
+      <td >99.1</td>
     </tr>
     <tr>
       <td style="text-align:left">`ZigZag`</td>
-      <td ></td> 
-      <td ></td>
-      <td ></td>
-      <td ></td>
-      <td ></td> 
-      <td ></td>
-      <td ></td>
-      <td ></td>
-      <td ></td> 
-      <td ></td>
-      <td ></td>
-      <td ></td>
-      <td ></td> 
-      <td ></td>
-      <td ></td>
-      <td ></td>
-      <td ></td> 
-      <td ></td>
-      <td ></td>
-      <td ></td>
-      <td ></td> 
-      <td ></td>
-      <td ></td>
-      <td ></td>
+      <td >752</td> 
+      <td >480</td>
+      <td >448</td>
+      <td >415</td>
+      <td >2611</td> 
+      <td >2284</td>
+      <td >2149</td>
+      <td >2166</td>
+      <td >196 (201)</td>
+      <td >195 (201)</td>
+      <td >195 (201)</td>
+      <td >195 (201)</td>
+      <td >29</td> 
+      <td >19</td>
+      <td >16</td>
+      <td >18</td>
+      <td >504 (517)</td> 
+      <td >502 (517)</td>
+      <td >501 (517)</td>
+      <td >501 (517)</td>
+      <td >99.1</td> 
+      <td >99.8</td>
+      <td >98.4</td>
+      <td style="text">98.4</td>
     </tr>
   </tbody>
 </table>
