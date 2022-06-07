@@ -97,7 +97,7 @@ To solve the above SIFC problem, we present a set of algorithmic developments in
   <tbody>
     <tr>
       <td style="text-align:left">`onlineSCC`</td>
-      <td style="text-align:center">731</td> 
+      <td >731</td> 
       <td >401</td>
       <td >356</td>
       <td >346</td>
