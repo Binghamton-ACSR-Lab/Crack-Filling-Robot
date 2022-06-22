@@ -34,21 +34,19 @@ To solve the above SIFC problem, we present a set of algorithmic developments in
 
 <br/>
 
-## Design Overview
+## Experimental Setup
 
-### Hardware:
-* Eg. Jetson Nano
-* Eg. Lidar
-  
-### Software:
-* MATLAB
-* LabVIEW
+> |![](Docs/1.Images/ExperimentalSetup.png)|
+> |:--|
+> |Fig. 1. The omni-directional crack filling robot with various sensors and actuators. (a) Front view and (b) side view. (c) Indoor experimental setup with optical motion capture system. (d) An illustrative example of the filling error calculation. The crack filling errors are calculated by the center-line differences between the cracks (blue) and the delivered paint (red).|
 
-> ![](Docs/1.Images/WallE_CAD.png)
-> ![](Docs/1.Images/WallE_CAD_front.png)
-> ![](Docs/1.Images/WallE_CAD_top.png)
-> ![](Docs/1.Images/WallE_CAD_top_open.png)
+Fig. 1(a) shows the crack filling robot prototype, and Fig. 1(b) shows the indoor experimental setup for testing
+validation. Instead of building actual cracks in the floor surface, we represented the cracks by drawing crack maps on drop cloths with blue paint. The robot then delivered red paint to cover the drawn cracks to emulate the crack filling experiments. Using optical markers placed on the top surface of the robot, we obtained the position and orientation of the robot from the motion capture systems (8 Vantage cameras, Vicon Ltd.). Two stepper motors were used to drive the nozzle motion through a timing-belt XY-positioning design. A hydraulic pump and a solenoid valve were used for fluid paint delivery and control through the nozzle. Having known
+the robot location, the local crack images within the region centered around the robot with range of S were fed to the planner to emulate the onboard crack detection sensor. The local position of the nozzle in the robot frame was obtained from a stereo camera mounted at the center of the robot pointing downward; see Fig. 1(a). In addition to the nozzle position, the stereo camera also provided the location of the unfilled and filled cracks in real time.
 
+### Follow the link for [Hardware Details](Docs/3.Hardware/3.1_CurrentVersion/README.md)
+
+<br/>
 
 ## Experiment Performance Comparison on Four Crack Maps under Five Planning Algorithms：
 
