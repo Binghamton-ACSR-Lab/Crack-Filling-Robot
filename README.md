@@ -4,7 +4,7 @@
 >
 > Video : [We made a Crack Filling Robot！ - YouTube](https://www.youtube.com/watch?v=VYJV3xwJ_5Y)
 
-> ![](Docs/1.Images/WallE1.JPG)
+> ![](Docs/3.Hardware/3.1_CurrentVersion/WallE_v1_ISO_View.jpg)
 
 <br/>
 
