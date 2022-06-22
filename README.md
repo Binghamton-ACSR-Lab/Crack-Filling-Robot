@@ -6,7 +6,6 @@
 
 > ![](Docs/1.Images/AlgorithmIllustration.jpg)
 
-<br/>
 
 ## Abstract
 <div style="text-align: justify">
