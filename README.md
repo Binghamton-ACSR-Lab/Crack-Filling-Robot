@@ -46,8 +46,6 @@ the robot location, the local crack images within the region centered around the
 
 ### Follow the link for [Hardware Details](Docs/3.Hardware/3.1_CurrentVersion/README.md)
 
-<br/>
-
 ## Experiment Performance Comparison on Four Crack Maps under Five Planning Algorithms：
 
 <br/>
