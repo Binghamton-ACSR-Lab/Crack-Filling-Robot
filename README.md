@@ -9,7 +9,7 @@
 
 ## Abstract
 <div style="text-align: justify">
-We present a simultaneous sensor-based inspection and footprint coverage (RIFC) planning and robotic control design with applications to efficiently detect and fill unknown cracks in civil infrastructure. Surface cracks exist in many civil infrastructures, such as road and bridge deck surfaces, parking plots, etc., and the RIFC design enables a robotic crack detection and repair system. The proposed online sensor-based complete coverage planning minimizes the total traveling distance of the robot, guarantees the complete sensor coverage of the entire workspace, and achieves near-optimal footprint coverage and repairing of all the cracks. The new SIFC algorithm constructs the unknown crack maps and Reeb graphs online. The total distance traveled by the robot is minimized and the resulting near-optimal path is calculated in polynomial time. The onboard motion control is coordinated with the planned robot trajectory to efficiently fill all cracks underneath the robot footprint. Extensive experimental results are presented to demonstrate the system design and performance evaluation. The SIFC design provide a high-efficiency online planning algorithmic solution to infrastructure maintenance and other robotic applications.
+We present a simultaneous sensor-based inspection and footprint coverage (SIFC) planning and robotic control design with applications to efficiently detect and fill unknown cracks in civil infrastructure. Surface cracks exist in many civil infrastructures, such as road and bridge deck surfaces, parking plots, etc., and the SIFC design enables a robotic crack detection and repair system. The proposed online sensor-based complete coverage planning minimizes the total traveling distance of the robot, guarantees the complete sensor coverage of the entire workspace, and achieves near-optimal footprint coverage and repairing of all the cracks. The new SIFC algorithm constructs the unknown crack maps and Reeb graphs online. The total distance traveled by the robot is minimized and the resulting near-optimal path is calculated in polynomial time. The onboard motion control is coordinated with the planned robot trajectory to efficiently fill all cracks underneath the robot footprint. Extensive experimental results are presented to demonstrate the system design and performance evaluation. The SIFC design provide a high-efficiency online planning algorithmic solution to infrastructure maintenance and other robotic applications.
 </div>
 
 ## Algorithm Design Overview
@@ -26,9 +26,9 @@ To solve the above SIFC problem, we present a set of algorithmic developments in
 ## Flow Chart
 | | |
 |:----:|:----:|
-| SCC Flow Cahrt| SCC Simulation Result |
+| SCC Flow Chart| SCC Simulation Result |
 | <img width="100%" src="Docs/2.Drawings/SCC_flow.svg"> | <img width="600" src="Results/SCC/GIF/myCrack8_100_1_SCC.gif"> |
-| oSCC Flow Cahrt| oSCC Simulation Result |
+| oSCC Flow Chart| oSCC Simulation Result |
 | <img width="100%" src="Docs/2.Drawings/oSCC_flow.svg"> | <img width="600" src="Results/oSCC/GIF/myCrack8_100_1_oSCC.gif"> |
 
 <br/>
@@ -54,7 +54,7 @@ the robot location, the local crack images within the region centered around the
   <thead>
     <tr>
       <th> </th>
-      <th colspan="4" style="text-align:center">Fililng Time (s)</th>
+      <th colspan="4" style="text-align:center">Filling Time (s)</th>
       <th colspan="4" style="text-align:center">Robot Travel Time (s)</th>
       <th colspan="4" style="text-align:center">Robot Path Length (m)</th>
       <th colspan="4" style="text-align:center">Nozzle Path (m)</th>
