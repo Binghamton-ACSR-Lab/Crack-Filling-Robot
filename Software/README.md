@@ -5,7 +5,7 @@
 ### Language used:
 * MATLAB R2021a
 
-### Main Functions:
+## Main Functions:
 * Algorithms:
   * `SCC.m`
   * `OnlineSCC.m`
@@ -26,7 +26,7 @@ Run the below command in MATLAB console to execute online Sensor-based Complete 
 OnlineSCC.m
 ```
 
-### Slave Functions:
+## Slave Functions:
 * Funtions:
   * `MCD.m`
   * `Reed.m`
