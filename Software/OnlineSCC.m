@@ -53,14 +53,14 @@ sRan = @(t,rr,cp) bound(round(cp-(rr)),1,t):bound(round(cp+(rr)),1,t);
 
 crackGen = 0;numItr=0; ppn=0;
 
-%%% Importing Map
+%% Importing Map
 
 % Uniform Distribution
 den = [35,45,50,65,80,90,95,100];Gau=0;dd=8 ;
 img_n=['myCrack' num2str(dd) '_' num2str(den(dd)) '_1'] ;
 BW = imread(['Crack Maps/Uniform/' img_n '.png']);      % Importing the map w/ crack information imread([img_n '.png']);%
 
-% % % Gaussian Distribution
+% % Gaussian Distribution
 % den = [35,45,50,65,80,90,95,100];sig=[5,10,100];Gau=1;bb=3;dd=8;%k=8 ;
 % Gaussb ='7'; sig_n = num2str(sig(bb)); den_n = num2str(den(dd));
 % img_n=['myCrackGauss_s' sig_n '_' den_n];
