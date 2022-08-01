@@ -34,8 +34,8 @@ Run the below command in MATLAB console to execute online Sensor-based Complete 
 OnlineSCC.m
 ```
 
-### Importing Maps to SCC Algorithm
-We have provided the complete database of Crack Maps used for this project in the [Crack Maps](CrackMaps/) [Hardware Details](Docs)
+### Importing Maps to SCC/oSCC Algorithm
+We have provided the complete database of Crack Maps used for this project in the [Crack Maps](https://github.com/Binghamton-ACSR-Lab/Crack-Filling-Robot/blob/main/CrackMaps). You can import any map from the database by modifying the lines given below for the respective algorithms. 
 #### SCC:
 https://github.com/Binghamton-ACSR-Lab/Crack-Filling-Robot/blob/af10dcc612931a204fab9aba4601079fd9bbe5f5/Software/SCC.m#L45-L60
 #### oSCC:
