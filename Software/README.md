@@ -13,14 +13,18 @@
 #### SCC 
 We discuss the optimal coverage planning with known cracks in the previous section, and the crack coverage planning algorithm does not consider the sensor coverage. In order to solve the SIFT problem, we first consider the coverage planning with known target (crack) information. Then, we generalize the algorithm to the case with unknown target information.
 
-Run the below command to execute Sensor-based Complete Coverage (SCC):
-```matlab SCC.m```
+Run the below command in MATLAB console to execute Sensor-based Complete Coverage (SCC):
+```matlab
+SCC.m
+```
 
 #### OnlineSCC 
 The onlineSCC algorithm is a practical extension of SCC where the robot stores and incrementally constructs the crack graph online. It scans for new cracks in W and updates the crack graph while simultaneously filling it.
 
-Run the below command to execute online Sensor-based Complete Coverage (oSCC):
-```matlab OnlineSCC.m```
+Run the below command in MATLAB console to execute online Sensor-based Complete Coverage (oSCC):
+```matlab
+OnlineSCC.m
+```
 
 ### Slave Functions:
 * Funtions:
