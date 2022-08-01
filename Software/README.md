@@ -35,7 +35,7 @@ OnlineSCC.m
 ```
 
 ### Importing Maps to SCC Algorithm
-We have provided the complete database of Crack Maps used for this project in the [Crack Maps](CrackMaps)
+We have provided the complete database of Crack Maps used for this project in the [Crack Maps](CrackMaps/) [Hardware Details](Docs)
 #### SCC:
 https://github.com/Binghamton-ACSR-Lab/Crack-Filling-Robot/blob/af10dcc612931a204fab9aba4601079fd9bbe5f5/Software/SCC.m#L45-L60
 #### oSCC:
