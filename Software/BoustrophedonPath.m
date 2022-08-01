@@ -5,20 +5,24 @@
 % July 2019, Last Revision: 25-Sep-2019
 
 function [subXY,flag] = BoustrophedonPath(cell,orgcell,reebEdge,bp_gap,dir,init,wall_fol,known,fl_see)
-% drawArrow(p0,p1)
 %
-% Draws a simple arrow in 2D, from p0 to p1.
+% BoustrophedonPath is a simple path generation function that analyses the topology of individual 
+% cells in the workspace and generates a zigzag path within the cell. 
 %
 % INPUTS:
-%   p0 = [x0; y0] = position of the tail
-%   p1 = [x1; y1] = position of the tip
-%   color = arrow color. Optional: default is black 
-%       --> can be 'r','g','b','c','m','y','w', 'k' or a 1x3 color vector
+%   cell = Single cell from the decomposed workspace with a negative footprint Minkowski sum, in polygon. 
+%   orgcell = Single cell from the decomposed workspace, in polygon. 
+%   reebEdge = Reeb edge of the cell from Reeb Graph.  
+%   bp_gap = Spacing between the vertical lines in the zigzag path, sensor range.
+%   dir = Variable containing path direction for each cell.
+%   init = Current position of the Robot. 
+%   wall_fol =  Flag for wall follow.
+%   known = Flag for SCC. 
+%   fl_see = Flag for simulation.
 %
 % OUTPUTS:
-%   hArrow = handle to the patch object representing the arrow
-%
-% Defaults:
+%   subXY = Final path generated containing coordinate points in a sequential order.
+%   flag = Flag for simulation.
 
     global spdist s allNode a total_length
     subXY=[];rowBW=max(cell.Vertices(:,2));flag=~wall_fol;cell_loj=false;%in=zeros(2);

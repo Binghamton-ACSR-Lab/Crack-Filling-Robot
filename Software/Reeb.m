@@ -5,20 +5,20 @@
 % July 2019, Last Revision: 25-Sep-2019
 
 function [reebEdge,reebCell,reeb,reebwall,remreg]=Reeb(polyinreg,critP,splitEdge)                             % Generating Reeb Graph
-% drawArrow(p0,p1)
 %
-% Draws a simple arrow in 2D, from p0 to p1.
+% Computes a reeb graph from the decomposed cells. 
 %
 % INPUTS:
-%   p0 = [x0; y0] = position of the tail
-%   p1 = [x1; y1] = position of the tip
-%   color = arrow color. Optional: default is black 
-%       --> can be 'r','g','b','c','m','y','w', 'k' or a 1x3 color vector
+%   polyinreg = Variable containing all cells in polygon format.  
+%   critP = [x1; y1] = Critical points in the workspace.  
+%   splitEdge = Splitline at the critial points. 
 %
 % OUTPUTS:
-%   hArrow = handle to the patch object representing the arrow
-%
-% Defaults:
+%   reebEdge = Computed reeb edges. 
+%   reebCell = Decomposed cells in the workspace sorted by reebEdge
+%   reeb = Reeb edge curves for plotting. 
+%   reebwall = Wall follow Reeb edge curves for plotting. 
+%   remreg = polygons that are false positives.
 
     global a spdist spdist2
     TFin = [];reebCon = zeros(length(polyinreg));reebEdge=[];reeb=[];reebCell=[];remreg=[];reebwall=[];

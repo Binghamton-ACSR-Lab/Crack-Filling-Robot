@@ -5,20 +5,26 @@
 % July 2019, Last Revision: 25-Sep-2019
 
 function [waypoint_coords,flag,crackR,ttt] = image_planning_func_oSCC(BW3,a,s,cp,acp,endP,realEndP,contEndP,ppath,preCrack)
-% drawArrow(p0,p1)
 %
-% Draws a simple arrow in 2D, from p0 to p1.
+% Performs Image processing, extacts cracks and metadata, and computes the waypoints for the crackGraph using Visibility Graph.
 %
 % INPUTS:
-%   p0 = [x0; y0] = position of the tail
-%   p1 = [x1; y1] = position of the tip
-%   color = arrow color. Optional: default is black 
-%       --> can be 'r','g','b','c','m','y','w', 'k' or a 1x3 color vector
+%   BW3 = Binary image of the sensor range. 
+%   a = Footprint Range. 
+%   s = Sensor Range.
+%   cp = Simulated current point.
+%   acp = Actual currnt point. 
+%   endP = [x0; y0] = All enpoints of the extracted cracks.
+%   realEndP = [x0; y0] = Real enpoints in endP. 
+%   contEndP = [x0; y0] = Continuing enpoints in endP.
+%   ppath = [x0; y0] = Path of the robot from start to current iteration. 
+%   preCrack = [x0; y0] = Scanned craks from previous iteration. 
 %
 % OUTPUTS:
-%   hArrow = handle to the patch object representing the arrow
-%
-% Defaults:
+%   waypoint_coords = [x0; y0] = Waypoint coordinates of the crackGraph. 
+%   flag = high if robot is curently filling, low if robot is just trasversing.
+%   crackR = [x0; y0] = Scanned craks from current iteration.
+%   ttt = Computation time.
 
     % Version2 Changed Connecting the Crack Graph Section
 

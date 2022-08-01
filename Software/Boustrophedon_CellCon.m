@@ -5,20 +5,24 @@
 % July 2019, Last Revision: 25-Sep-2019
 
 function PathEdge = Boustrophedon_CellCon(Path,splitReg,see,seP,init,wall_fol,known,sim)%,allNode
-% drawArrow(p0,p1)
 %
-% Draws a simple arrow in 2D, from p0 to p1.
+% Boustrophedon_CellCon path planner is a complete coverage path planner that generates a zigzag path for the given cell while achieving a complete coverage. 
+% This function computes a zigzag path of cells following the node sequence in the input variable Path. 
+% Same as Boustrophedon function with a added Cell connection feature. When the input workspace consist of disjoint cell decomposition the cell connection feature
+% first connects the disjoint cells using a global shortest distance and then computes the boustrophedon path for the individual cells. 
 %
 % INPUTS:
-%   p0 = [x0; y0] = position of the tail
-%   p1 = [x1; y1] = position of the tip
-%   color = arrow color. Optional: default is black 
-%       --> can be 'r','g','b','c','m','y','w', 'k' or a 1x3 color vector
+%   Path = Pre-computed path sequence. 
+%   splitReg = Decomposed cell in polygons. 
+%   see = Variable containing path direction for each cell.  
+%   seP = Variable containing start and end point coordinated of all edges in Reeb graph.
+%   init = Current position of the Robot. 
+%   wall_fol = Gives the index of cells that require a wall follow.
+%   known = Flag for SCC
+%   sim = Flag for simulation. 
 %
 % OUTPUTS:
-%   hArrow = handle to the patch object representing the arrow
-%
-% Defaults:
+%   PathEdge = Final path generated containing coordinate points in a sequential order.
 
     global reebEdge reebCell crackEdge crackRaw s allNode spdist a total_length spdist2
     o=0;fl_see=false;

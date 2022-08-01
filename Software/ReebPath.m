@@ -5,20 +5,20 @@
 % July 2019, Last Revision: 25-Sep-2019
 
 function [Path,wall_fol,adj]=ReebPath(adj,critP,reebEdge,cells,Start)
-% drawArrow(p0,p1)
 %
-% Draws a simple arrow in 2D, from p0 to p1.
+% Computes a reebPath of all connected cells in sequential order to achieve complete coverage minimizing the overlapping. 
 %
 % INPUTS:
-%   p0 = [x0; y0] = position of the tail
-%   p1 = [x1; y1] = position of the tip
-%   color = arrow color. Optional: default is black 
-%       --> can be 'r','g','b','c','m','y','w', 'k' or a 1x3 color vector
+%   adj = Adjacent matrix explaining the connectivity of edges in the Reeb graph. 
+%   critP = [x0; y0] = Current node in coordinate points. 
+%   reebEdge = Reeb edges.
+%   cells = Reeb cells.
+%   Start = Starting node. 
 %
 % OUTPUTS:
-%   hArrow = handle to the patch object representing the arrow
-%
-% Defaults:
+%   Path = reebPath used to compute the final path. 
+%   wall_fol = Gives the edges with 1 connectivity. Used for determining wall follow. 
+%   adj = Adjacent matrix explaining the connectivity of edges in the Reeb graph.
 
     Path=[];wall_fol=[];
     A=adj;

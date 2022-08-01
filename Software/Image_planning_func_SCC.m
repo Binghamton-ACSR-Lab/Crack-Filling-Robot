@@ -5,20 +5,16 @@
 % July 2019, Last Revision: 25-Sep-2019
 
 function [node,edgeList,ttt]=Image_planning_func_SCC(img_n)
-% drawArrow(p0,p1)
 %
-% Draws a simple arrow in 2D, from p0 to p1.
+% Performs Image processing, extacts cracks and metadata, and computes the waypoints for the crackGraph using Visibility Graph.
 %
 % INPUTS:
-%   p0 = [x0; y0] = position of the tail
-%   p1 = [x1; y1] = position of the tip
-%   color = arrow color. Optional: default is black 
-%       --> can be 'r','g','b','c','m','y','w', 'k' or a 1x3 color vector
+%   img_n = RGB or Binary image of the workspace. 
 %
 % OUTPUTS:
-%   hArrow = handle to the patch object representing the arrow
-%
-% Defaults:
+%   node = [x0; y0] = nodes list of all edges in crackGraph in undirected graph format. 
+%   edgeList = [node1; node2] = edges list of all edges in crackGraph in undirected graph format.
+%   ttt = Computation time.
 
 % clc
 % 

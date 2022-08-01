@@ -5,20 +5,21 @@
 % July 2019, Last Revision: 25-Sep-2019
 
 function [critPT,polyout_work,polyout,splitEdge]=MCD(polyin_buffed,polyin_work,polyin,nodeend,flag)
-% drawArrow(p0,p1)
 %
-% Draws a simple arrow in 2D, from p0 to p1.
+% Computes a Morse Decomposition of the workspace. 
 %
 % INPUTS:
-%   p0 = [x0; y0] = position of the tail
-%   p1 = [x1; y1] = position of the tip
-%   color = arrow color. Optional: default is black 
-%       --> can be 'r','g','b','c','m','y','w', 'k' or a 1x3 color vector
+%   polyin_buffed = Polygon in the shape of the workspace with a minkowski sum of 'a'.  
+%   polyin_work = Polygon in the shape of the workspace, working. 
+%   polyin = Polygon in the shape of the workspace.
+%   nodeend = Current Position of the robot. 
+%   flag = Flag to smooth the edges of the imput polygon. 
 %
 % OUTPUTS:
-%   hArrow = handle to the patch object representing the arrow
-%
-% Defaults:
+%   critPT = Critcal points in the workspace. 
+%   polyout_work = Decomposed cells in the workspace. 
+%   polyout = Decomposed cells in the workspace.
+%   splitEdge = Splitline at the critial points. 
 
     if length(polyin_buffed)==1; polyin_buffed=regions(polyin_buffed);end
     if length(polyin_buffed)>1;polyin_work=regions(polyin_work);end

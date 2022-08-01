@@ -7,25 +7,22 @@
 %Chinese Postman Problem Function
 %--------------------------------------------------------------------%
 function [Path,Weight,add,st] = ChinesePostman(ADJ,Matrix_Input, DIST, Start, ee, cl)
-% ChinesePostman(ADJ,Matrix_Input, DIST, Start, ee, cl)
 %
 % Function to compute a Chinese Postman Problem using Linear Programming Matching.  
 %
 % INPUTS:
-%   ADJ = 
-%   Matrix_Input = 
-%   DIST = 
-%   Start = 
-%   ee = 
-%   cl = 
+%   ADJ = Adjacency matrix representing a the graph as a matrix of booleans (0's and 1's). 
+%   Matrix_Input = ADJ*DIST 
+%   DIST = Matrix contains the distance information of each edges in the graph. 
+%   Start = Start node for path.
+%   ee = Edges to be removed from the path planner. 
+%   cl = node that is closest to the robot. 
 %
 % OUTPUTS:
-%   Path = 
-%   Weight = 
-%   add = 
-%   st = 
-%
-% Defaults:
+%   Path = Final path containing node sequence for edge transversing to achieve shortest path. 
+%   Weight = Total Weight of the final Path. 
+%   add = New edges to be added. 
+%   st = Edge to be removed, largest connecting edge. 
 
 switch nargin
     case 3
