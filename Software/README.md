@@ -11,7 +11,11 @@
   * `OnlineSCC.m`
   
 ### SCC 
-We discuss the optimal coverage planning with known cracks in the previous section, and the crack coverage planning algorithm does not consider the sensor coverage. In order to solve the SIFT problem, we first consider the coverage planning with known target (crack) information. Then, we generalize the algorithm to the case with unknown target information.
+The SCC algorithm is a Sensor-based Complete Coverage path planner in which we consider that all the target are known to the robot. 
+
+> |<p align="center"> <img alt="Credit: Flickr user johndoe" src="./../Docs/4.Software/SCC.png" ></p>|
+> |:--|
+The algorithm constructs crack graph for all the known cracks in the workspace, then it computes the MCD and Reeb Graph. The Crack graph and the Reeb graphs are merged and computes a shortest path sequence using the Chinese Postman Problem. Finally, the full coverage path is computed by the Boustrophedon Path planner.  
 
 Run the below command in MATLAB console to execute Sensor-based Complete Coverage (SCC):
 ```matlab
@@ -20,11 +24,19 @@ SCC.m
 
 ### OnlineSCC 
 The onlineSCC algorithm is a practical extension of SCC where the robot stores and incrementally constructs the crack graph online. It scans for new cracks in W and updates the crack graph while simultaneously filling it.
+> |<p align="center"> <img alt="Credit: Flickr user johndoe" src="./../Docs/4.Software/oSCC.png" ></p>|
+> |:--|
+
+Figure above shows all the iterations of the oSCC algorithm. 
 
 Run the below command in MATLAB console to execute online Sensor-based Complete Coverage (oSCC):
 ```matlab
 OnlineSCC.m
 ```
+
+### Importing Maps to SCC/oSCC Algorithm
+https://github.com/Binghamton-ACSR-Lab/Crack-Filling-Robot/blob/af10dcc612931a204fab9aba4601079fd9bbe5f5/Software/SCC.m#L45-L60
+
 
 ## Slave Functions:
 * Funtions:
