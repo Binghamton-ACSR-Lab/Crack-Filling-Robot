@@ -54,7 +54,7 @@ The `Image_Planning_Func.m` also computes the Minkowski Sum over the cracks extr
 
 The image planning is performed differently between onlineSCC and SCC. For SCC, the algorithm computes the image planning for the entire workspace with all crack information. For onlineSCC, the algorithm computes the image planning only for the sensor range in a loop as the robot scans and fill the cracks online. 
 
-Image Planning for onlineSCC:
+#### Image Planning for onlineSCC:
 ```matlab
 function [waypoint_coords,flag,crackR,ttt] = image_planning_func_oSCC(BW3,a,s,cp,acp,endP,realEndP,contEndP,ppath,preCrack)
 %
@@ -78,7 +78,7 @@ function [waypoint_coords,flag,crackR,ttt] = image_planning_func_oSCC(BW3,a,s,cp
 %   crackR = [x0; y0] = Scanned craks from current iteration.
 %   ttt = Computation time.
 ```
-Image Planning for SCC: 
+#### Image Planning for SCC: 
 ```matlab
 function [node,edgeList,ttt]=Image_planning_func_SCC(img_n)
 %
@@ -130,7 +130,7 @@ function [critPT,polyout_work,polyout,splitEdge]=MCD(polyin_buffed,polyin_work,p
 
 A Reeb graph represent the topology of the cellular decomposition, which is illustrated in Figure 1. with edges 𝐸<sub>*1*</sub> - 𝐸<sub>*4*</sub>. It defines the connectivity of the decomposed cells in the workspace, where the nodes represent the critical points and the edges represent their respective cells.
 
-Reeb:
+#### Reeb:
 Computes a reeb graph from the decomposed cells from Morse cell decomposition.
 ```matlab
 function [reebEdge,reebCell,reeb,reebwall,remreg]=Reeb(polyinreg,critP,splitEdge)                             
@@ -149,7 +149,7 @@ function [reebEdge,reebCell,reeb,reebwall,remreg]=Reeb(polyinreg,critP,splitEdge
 %   reebwall = Wall follow Reeb edge curves for plotting. 
 %   remreg = polygons that are false positives.
 ```
-ReebPath:
+#### ReebPath:
 Computes a reebPath of all connected cells in sequential order to achieve complete coverage minimizing the overlapping.
 ```matlab
 function [Path,wall_fol,adj]=ReebPath(adj,critP,reebEdge,cells,Start)
@@ -168,7 +168,7 @@ function [Path,wall_fol,adj]=ReebPath(adj,critP,reebEdge,cells,Start)
 %   wall_fol = Gives the edges with 1 connectivity. Used for determining wall follow. 
 %   adj = Adjacent matrix explaining the connectivity of edges in the Reeb graph.
 ```
-ReebPath2:
+#### ReebPath2:
 Computes a reebPath of disconnected cells in sequential order to achieve complete coverage minimizing the overlapping.
 ```matlab
 function [reebEdge,reebCell,reeb,reebwall,remreg]=ReebPath2(polyinreg,critP,splitEdge)                            
