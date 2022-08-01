@@ -10,7 +10,7 @@
   * `SCC.m`
   * `OnlineSCC.m`
   
-#### SCC 
+### SCC 
 We discuss the optimal coverage planning with known cracks in the previous section, and the crack coverage planning algorithm does not consider the sensor coverage. In order to solve the SIFT problem, we first consider the coverage planning with known target (crack) information. Then, we generalize the algorithm to the case with unknown target information.
 
 Run the below command in MATLAB console to execute Sensor-based Complete Coverage (SCC):
@@ -18,7 +18,7 @@ Run the below command in MATLAB console to execute Sensor-based Complete Coverag
 SCC.m
 ```
 
-#### OnlineSCC 
+### OnlineSCC 
 The onlineSCC algorithm is a practical extension of SCC where the robot stores and incrementally constructs the crack graph online. It scans for new cracks in W and updates the crack graph while simultaneously filling it.
 
 Run the below command in MATLAB console to execute online Sensor-based Complete Coverage (oSCC):
@@ -38,7 +38,7 @@ OnlineSCC.m
   * `ChinesePostMan.m`
   * `Image_Planning_Func.m`
 
-#### Image Planning 
+### Image Planning 
 The first step for the Robot is to extract the cracks from an RGB image of the surface cracks. The `Image_Planning_Func.m` converts the RGB image into Binary image, then skeletonizes the cracks and traces the to extract the cracks and their metadata.
 > |<p align="center"> <img alt="Credit: Flickr user johndoe" src="./../Docs/4.Software/Image Processing.jpg" > Image Credit: https://doi.org/10.1016/j.jtte.2019.10.001 </p>|
 > |:--|
@@ -94,7 +94,7 @@ function [node,edgeList,ttt]=Image_planning_func_SCC(img_n)
 ```
 
 
-#### MCD
+### MCD
 Morce Cell Decomposition (MCD) is one of the Cellular Decomposition Methods. It is used to identify the critical points in the workspace and decompose the complex workspace into multiple simple cells. A ‘Slice’ is a vertical line that is swept from left to right and connectivity changes are recorded.
 
 > |<p align="center"> <img src="./../Docs/4.Software/MCD.png" width="50%" height="50%"> </p>|
@@ -126,7 +126,7 @@ function [critPT,polyout_work,polyout,splitEdge]=MCD(polyin_buffed,polyin_work,p
 ```
 
 
-#### Reeb
+### Reeb
 
 A Reeb graph represent the topology of the cellular decomposition, which is illustrated in Figure 1. with edges 𝐸<sub>*1*</sub> - 𝐸<sub>*4*</sub>. It defines the connectivity of the decomposed cells in the workspace, where the nodes represent the critical points and the edges represent their respective cells.
 
@@ -188,7 +188,7 @@ function [reebEdge,reebCell,reeb,reebwall,remreg]=ReebPath2(polyinreg,critP,spli
 %   adj = Adjacent matrix explaining the connectivity of edges in the Reeb graph.
 ```
 
-#### Boustrophedon Path Planning
+### Boustrophedon Path Planning
 Boustrophedon path planner is a complete coverage path planner that generates a zigzag path for the given cell while achieving a complete coverage. This function computes a zigzag path of cells following the node sequence in the input variable Path.
 
 ```matlab
@@ -256,7 +256,7 @@ function [subXY,flag] = BoustrophedonPath(cell,orgcell,reebEdge,bp_gap,dir,init,
 %   flag = Flag for simulation.
 ```
 
-#### ChinesePostMan
+### ChinesePostMan
 Chinese Postman Problem is a variation of Eulerian circuit problem for undirected graphs. An Euler Circuit is a closed walk that covers every edge once starting and ending position is same. Chinese Postman problem is defined for connected and undirected graph. The problem is to find shortest path or circuity that visits every edge of the graph at least once. 
 > |<p align="center"> <img src="./../Docs/4.Software/CPP.png" width="50%" height="50%"> </p>|
 > |:--|
