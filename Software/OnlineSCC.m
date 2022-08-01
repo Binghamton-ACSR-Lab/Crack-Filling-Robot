@@ -67,7 +67,7 @@ BW = imread(['Crack Maps/Uniform/' img_n '.png']);      % Importing the map w/ c
 % load(['Crack Maps/Gaussian' Gaussb '/' img_n '.mat'])
 % crackGen(end,end)=0;
 
-%%%
+%%
 
 sm_flag=1; %Polygon Smoothing flag
 

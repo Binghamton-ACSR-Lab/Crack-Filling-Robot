@@ -59,7 +59,7 @@ crackGen = zeros(rowBW,colBW);
 % crackGen(end,end)=0;
 % [node,edgeList,ttt]=Image_planning6_func(crackGen);
 
-%%%
+%%
 
 % close all
 smflag=0;
