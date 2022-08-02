@@ -157,7 +157,7 @@ tStart = tic; plot(s/sqrt(2),s/sqrt(2),'v','Color','#0072BD','MarkerSize',15,'Ma
 while any(final.regions.area>2*aa.area)
 tic    
 if exist('plreeb','var')
-    delete(plreeb);delete(reebt);delete(plmcdcrt);delete(plmcdcrtt);%delete(plPEdge);%delete(tt);
+    delete(plreeb);delete(reebt);delete(plmcdcrt);delete(plmcdcrtt); %delete(plPEdge);%delete(tt);
 %     delete(tt);
 end
 
