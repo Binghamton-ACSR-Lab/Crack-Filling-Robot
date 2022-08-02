@@ -242,7 +242,7 @@ G=graph(allEdge(:,1),allEdge(:,2));adj=full(adjacency(G));
 
 if length(conncomp(graph(reebEdge(:,1),reebEdge(:,2)), 'OutputForm', 'cell'))>1
     t1=sum(reshape(subcritP(reebEdge(:),2)<PathEdge(end,1),[],2),2)>1;  % Cell with both the critical points to the left of the current point 
-    if 0%any(t1)%& t2
+    if 0 %any(t1)%& t2
         rT = reebEdge(t1,:);[~,ind]=min(spdist(PathEdge(end,:),fliplr(subcritP(rT,:))));
         ind=rT(ind);
     else
