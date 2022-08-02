@@ -69,9 +69,9 @@ BW = imread(['Crack Maps/Uniform/' img_n '.png']);      % Importing the map w/ c
 
 %%
 
-sm_flag=1; %Polygon Smoothing flag
+sm_flag=1; % Polygon Smoothing flag
 
-if crackGen==0                     %ischar(img_n)
+if crackGen==0                     % ischar(img_n)
     BW = imbinarize(BW);           % Converting the image into a binary image
     BW = BW(:,:,1);
 
