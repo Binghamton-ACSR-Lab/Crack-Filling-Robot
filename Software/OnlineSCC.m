@@ -1,4 +1,4 @@
-%% Online SCC planning with unknown target information
+%% Online SCC planning with unknown target information 
 % Author: Vishnu Veeraraghavan,
 % Automated Control Systems and Robotics Lab.
 % Email: vveerar1@binghamton.edu.
@@ -53,7 +53,7 @@ sRan = @(t,rr,cp) bound(round(cp-(rr)),1,t):bound(round(cp+(rr)),1,t);
 
 crackGen = 0;numItr=0; ppn=0;
 
-%% Importing Map
+%% Importing Map 
 
 % Uniform Distribution
 den = [35,45,50,65,80,90,95,100];Gau=0;dd=8 ;
