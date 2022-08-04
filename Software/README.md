@@ -24,7 +24,7 @@ SCC.m
 
 ### OnlineSCC 
 The onlineSCC algorithm is a practical extension of SCC where the robot stores and incrementally constructs the crack graph online. It scans for new cracks in W and updates the crack graph while simultaneously filling it.
-> |<p align="center"> <img alt="Credit: Flickr user johndoe" src="./../Docs/4.Software/oSCC.png" ></p>|
+> |<p align="center"> <img src="./../Docs/4.Software/oSCC.png" ></p>|
 > |:--|
 
 Figure above shows all the iterations of the oSCC algorithm. 
@@ -55,7 +55,7 @@ https://github.com/Binghamton-ACSR-Lab/Crack-Filling-Robot/blob/86b35710caca81f8
 
 ### Image Planning 
 The first step for the Robot is to extract the cracks from an RGB image of the surface cracks. The `Image_Planning_Func.m` converts the RGB image into Binary image, then skeletonizes the cracks and traces the to extract the cracks and their metadata.
-> |<p align="center"> <img alt="Credit: Flickr user johndoe" src="./../Docs/4.Software/Image Processing.jpg" ></p><p>Crack Image Credit: W. Wang, M. Wang, H. Li, H. Zhao, K. Wang, C. He, J. Wang, S. Zheng, J. Chen, “Pavement crack image acquisition methods and crack extraction algorithms: A review,” J. Traf. and Transp. Eng., vol. 6, no. 6, pp. 535-556, 1992. <sup>https://doi.org/10.1016/j.jtte.2019.10.001 </sup></p> |
+> |<p align="center"> <img alt="Credit: Flickr user johndoe" src="./../Docs/4.Software/Image Processing.jpg" ></p><p><sup>Crack Image Credit: W. Wang, M. Wang, H. Li, H. Zhao, K. Wang, C. He, J. Wang, S. Zheng, J. Chen, “Pavement crack image acquisition methods and crack extraction algorithms: A review,” J. Traf. and Transp. Eng., vol. 6, no. 6, pp. 535-556, 1992. https://doi.org/10.1016/j.jtte.2019.10.001 </sup></p> |
 > |:--|
 > |Fig. 1. Before (a, b, c) and after (d, e, f) images of Image Processing.|
 
