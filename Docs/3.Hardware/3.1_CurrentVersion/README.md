@@ -21,11 +21,11 @@
 
 ### Images:
 
-> |![](WallE_v1_Bottom.jpg)|
+> |![](WallE_v1_Bottom.png)|
 > |:--:|
 > |Fig. 1: Bottom View|
 
-> |![](WallE_v1_ISO_View.jpg)|
+> |![](WallE_v1_ISO_View.png)|
 > |:--:|
 > |Fig. 2: ISO View|
 
