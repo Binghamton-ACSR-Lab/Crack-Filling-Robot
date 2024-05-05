@@ -31,9 +31,9 @@ To solve the above SIFC problem, we present a set of algorithmic developments in
 | | |
 |:----:|:----:|
 | SCC Flow Chart| SCC Simulation Result |
-| <img width="600%" src="Docs/2.Drawings/SCC_flow.svg"> | <img width="600" src="Results/SCC/GIF/myCrack8_100_1_SCC.gif"> |
+| <img width="600%" src="Docs/2.Drawings/SCC_flow.svg"> | <img width="400" src="Results/SCC/GIF/myCrack8_100_1_SCC.gif"> |
 | oSCC Flow Chart| oSCC Simulation Result |
-| <img width="600%" src="Docs/2.Drawings/oSCC_flow.svg"> | <img width="600" src="Results/oSCC/GIF/myCrack8_100_1_oSCC.gif"> |
+| <img width="600%" src="Docs/2.Drawings/oSCC_flow.svg"> | <img width="400" src="Results/oSCC/GIF/myCrack8_100_1_oSCC.gif"> |
 
 <br/>
 
@@ -55,6 +55,11 @@ the robot's location, the local crack images within the region centered around t
 
 <br/>
 
+> |![](Docs/1.Images/ExperimentalResult.png)|
+> |:--|
+> |Fig. 2. The experimental comparison of crack filling outcomes with four crack density and distribution profiles. From the top to the bottom rows, the crack maps are U100, U80, G100, and G20, respectively. Each column represents the experimental results under one motion planning algorithm. The robot’s starting and ending locations are marked by a “shadowed” and an actual robot image, respectively. (a) Results under the oSCC planner, (b) the SCC planner, (c) the Greedy planner, and (d) the ZigZag planner. The blue and red areas represent the cracks and the red paint that was dropped by the robot to cover the cracks. The black dashed lines represent the robot center’s traveling trajectories, and the arrows indicate the motion directions. More details can be found in the companion video clip.|
+
+<br/>
 
 <table style="text-align:center">
   <thead>
@@ -233,7 +238,3 @@ the robot's location, the local crack images within the region centered around t
     </tr>
   </tbody>
 </table>
-
-> |![](Docs/1.Images/ExperimentalResult.png)|
-> |:--|
-> |Fig. 2. The experimental comparison of crack filling outcomes with four crack density and distribution profiles. From the top to the bottom rows, the crack maps are U100, U80, G100, and G20, respectively. Each column represents the experimental results under one motion planning algorithm. The robot’s starting and ending locations are marked by a “shadowed” and an actual robot image, respectively. (a) Results under the oSCC planner, (b) the SCC planner, (c) the Greedy planner, and (d) the ZigZag planner. The blue and red areas represent the cracks and the red paint that was dropped by the robot to cover the cracks. The black dashed lines represent the robot center’s traveling trajectories, and the arrows indicate the motion directions. More details can be found in the companion video clip.|
