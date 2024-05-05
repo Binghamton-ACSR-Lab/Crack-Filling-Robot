@@ -4,11 +4,11 @@
 
 ### Hardware:
 * OnBoard Control Systems:
-  * Intel NUC: Embeded Mini PC
+  * Intel NUC: Embedded Mini PC
   * National Instruments CompactRIO
 * Sensors:
   * Stereo Camera (Facing Down)
-  * Optical Motion Capturing Sytem
+  * Optical Motion Capturing System
   * Vicon Cameras: 8x Vantage Cameras
 * Other:
   * CoreXY Printing System (2x Stepper Motors)
@@ -29,6 +29,6 @@
 > |:--:|
 > |Fig. 2: ISO View|
 
-> |![](WallE_v1_Schematic.jpg)|
+> |![](WallE_v1_Schematic.png)|
 > |:--:|
 > |Fig. 3: Schematic View|
