@@ -1,6 +1,6 @@
 # Complete and Near-Optimal Robotic Crack Coverage and Filling in Civil Infrastructure
 
-V. Veeraraghavan, K. Hunte, J. Yi, and K. Yu (2024). [Complete and Near-Optimal Robotic Crack Coverage and Filling in Civil Infrastructure.](https://ieeexplore.ieee.org/document/10506627) IEEE Trans. on Robotics, in press, doi: 10.1109/TRO.2024.3392077.
+V. Veeraraghavan, K. Hunte, J. Yi, and K. Yu (2024). [Complete and Near-Optimal Robotic Crack Coverage and Filling in Civil Infrastructure.](https://ieeexplore.ieee.org/document/10506627) *IEEE Trans. on Robotics*, in press, doi: 10.1109/TRO.2024.3392077.
 
 >
 > Video: **Complete and Near-Optimal Robotic Crack Coverage and Filling in Civil Infrastructure** - [YouTube](https://www.youtube.com/watch?v=dcutCBmMGNA)
@@ -31,9 +31,9 @@ To solve the above SIFC problem, we present a set of algorithmic developments in
 | | |
 |:----:|:----:|
 | SCC Flow Chart| SCC Simulation Result |
-| <img width="600%" src="Docs/2.Drawings/SCC_flow.svg"> | <img width="400" src="Results/SCC/GIF/myCrack8_100_1_SCC.gif"> |
+| <img height="600%" src="Docs/2.Drawings/SCC_flow.svg"> | <img width="600" src="Results/SCC/GIF/myCrack8_100_1_SCC.gif"> |
 | oSCC Flow Chart| oSCC Simulation Result |
-| <img width="600%" src="Docs/2.Drawings/oSCC_flow.svg"> | <img width="400" src="Results/oSCC/GIF/myCrack8_100_1_oSCC.gif"> |
+| <img height="600%" src="Docs/2.Drawings/oSCC_flow.svg"> | <img width="600" src="Results/oSCC/GIF/myCrack8_100_1_oSCC.gif"> |
 
 <br/>
 
