@@ -31,9 +31,9 @@ To solve the above SIFC problem, we present a set of algorithmic developments in
 | | |
 |:----:|:----:|
 | SCC Flow Chart| SCC Simulation Result |
-| <img height="600%" src="Docs/2.Drawings/SCC_flow.svg"> | <img width="600" src="Results/SCC/GIF/myCrack8_100_1_SCC.gif"> |
+| <img height="800%" src="Docs/2.Drawings/SCC_flow.svg"> | <img width="600" src="Results/SCC/GIF/myCrack8_100_1_SCC.gif"> |
 | oSCC Flow Chart| oSCC Simulation Result |
-| <img height="600%" src="Docs/2.Drawings/oSCC_flow.svg"> | <img width="600" src="Results/oSCC/GIF/myCrack8_100_1_oSCC.gif"> |
+| <img height="800%" src="Docs/2.Drawings/oSCC_flow.svg"> | <img width="600" src="Results/oSCC/GIF/myCrack8_100_1_oSCC.gif"> |
 
 <br/>
 
