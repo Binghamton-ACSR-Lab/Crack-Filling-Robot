@@ -25,7 +25,7 @@ To solve the above SIFC problem, we present a set of algorithmic developments in
 * ### Sensor-based Complete Coverage (SCC)
     We discuss the optimal coverage planning with known cracks in the previous section, and the crack coverage planning algorithm does not consider the sensor coverage. To solve the SIFT problem, we first consider the coverage planning with known target (crack) information. Then, we generalize the algorithm to the case with unknown target information.
 * ### online Sensor-based Complete Coverage (oSCC)
-    The onlineSCC algorithm is a practical extension of SCC where the robot stores and incrementally constructs the crack graph online. It scans for new cracks in W and updates the crack graph while simultaneously filling it.
+    The oSCC algorithm is a practical extension of SCC where the robot stores and incrementally constructs the crack graph online. It scans for new cracks in W and updates the crack graph while simultaneously filling it.
 
 ## Flow Chart
 | | |
@@ -102,7 +102,7 @@ the robot's location, the local crack images within the region centered around t
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">`onlineSCC`</td>
+      <td style="text-align:left"><code>oSCC</code></td>
       <td >731</td> 
       <td ><strong>401</strong></td>
       <td ><strong>356</strong></td>
@@ -129,7 +129,7 @@ the robot's location, the local crack images within the region centered around t
       <td >98.1</td>
     </tr>
     <tr>
-      <td style="text-align:left">`SCC`</td>
+      <td style="text-align:left"><code>SCC</code></td>
       <td ><strong>654</strong></td> 
       <td >430</td>
       <td >366</td>
@@ -156,7 +156,7 @@ the robot's location, the local crack images within the region centered around t
       <td >98.4</td>
     </tr>
     <tr>
-      <td style="text-align:left">`GCC`</td>
+      <td style="text-align:left"><code>GCC</code></td>
       <td >559</td> 
       <td >364</td>
       <td >273</td>
@@ -183,7 +183,7 @@ the robot's location, the local crack images within the region centered around t
       <td >98.4</td>
     </tr>
     <tr>
-      <td style="text-align:left">`Greedy`</td>
+      <td style="text-align:left"><code>Greedy</code></td>
       <td >746</td> 
       <td >446</td>
       <td >414</td>
@@ -210,7 +210,7 @@ the robot's location, the local crack images within the region centered around t
       <td >99.1</td>
     </tr>
     <tr>
-      <td style="text-align:left">`ZigZag`</td>
+      <td style="text-align:left"><code>ZigZag</code></td>
       <td >752</td> 
       <td >480</td>
       <td >448</td>
